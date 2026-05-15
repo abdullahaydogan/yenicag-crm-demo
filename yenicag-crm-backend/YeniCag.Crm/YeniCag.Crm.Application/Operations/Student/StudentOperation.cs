@@ -69,6 +69,10 @@ namespace YeniCag.Crm.Application.Operations.Student
             return student;
 
         }
+
+
+
+
         private static List<Core.Entity.PaymentInstallment> CreateInstallments( Core.Entity.StudentEnrollment enrollment,decimal netAmount, int installmentCount, DateOnly firstDueDate)
         {
             var installments = new List<Core.Entity.PaymentInstallment>();

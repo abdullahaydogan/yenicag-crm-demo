@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\StudentEnrollment\CreateStudentEnrollment\" />
+    <Folder Include="UseCases\StudentEnrollment\DeleteStudentEnrollment\" />
+    <Folder Include="UseCases\StudentEnrollment\UpdateStudentEnrollment\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Mapster" Version="10.0.7" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.4" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YeniCag.Crm.Core\YeniCag.Crm.Core.csproj" />
+    <ProjectReference Include="..\YeniCag.Crm.Persistance\YeniCag.Crm.Persistance.csproj" />
+  </ItemGroup>
+
+</Project>

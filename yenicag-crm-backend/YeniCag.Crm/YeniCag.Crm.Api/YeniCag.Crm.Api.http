@@ -1,0 +1,6 @@
+@YeniCag.Crm.Api_HostAddress = http://localhost:5206
+
+GET {{YeniCag.Crm.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
